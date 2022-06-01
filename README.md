@@ -17,4 +17,4 @@
 
 ## Image of weather app
 
-![Alt text](WeatherApp-Reactjs/src/assets/main.png?raw=true "Title")
+![Alt text](src/assets/main.png?raw=true "Title")
