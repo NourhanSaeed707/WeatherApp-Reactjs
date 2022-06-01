@@ -7,7 +7,7 @@ function App() {
   const [ data , setData ] = useState({});
   const [ location, setLocation ] = useState('');
    
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=0f58bde4b2cc6c8b091fce2745068c24`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid={API_KEY}`;
   // search function to get temperature of specific city and country that we are looking for in searhBox.
   const search = (event) => {
     if (event.key === 'Enter') {
@@ -26,7 +26,7 @@ function App() {
         setLong(position.coords.longitude);
       });
 
-      await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&APPID=0f58bde4b2cc6c8b091fce2745068c24`)
+      await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&APPID={API_KEY}`)
       .then(res => res.json())
       .then(result => {
         setData(result)
