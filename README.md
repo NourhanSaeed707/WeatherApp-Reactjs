@@ -17,4 +17,4 @@
 
 ## Image of weather app
 
-![Alt text](/assets/to/main.png?raw=true "Title")
+![Alt text](src/assets/to/main.png?raw=true "Title")
